@@ -23,10 +23,11 @@ jobs:
     - name: Setup node
       uses: actions/setup-node@v1
       with:
-        node-version: 12.x      
+        node-version: 12.x
     - run: npm i
       working-directory: codeceptJS
     - run: npx codeceptjs run --grep "${{ github.event.inputs.grep }}"
       working-directory: codeceptJS
       env:
         TESTOMATIO: "${{ github.event.inputs.testomatio }}"
+        TESTOMATIO_HOST: https://beta.testomat.io
