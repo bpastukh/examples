@@ -30,4 +30,4 @@ jobs:
       working-directory: codeceptJS
       env:
         TESTOMATIO: "${{ github.event.inputs.testomatio }}"
-        TESTOMATIO_HOST: https://beta.testomat.io
+        TESTOMATIO_URL: https://beta.testomat.io
