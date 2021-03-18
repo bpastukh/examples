@@ -12,6 +12,10 @@ on:
         default: ''
       testomatio:
         required: false
+      runId:
+        required: false
+      browsers:
+        required: false
 
 jobs:
   build:
