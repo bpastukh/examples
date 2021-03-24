@@ -12,7 +12,7 @@ on:
         default: ''
       testomatio:
         required: false
-      runId:
+      run:
         required: false
       browsers:
         required: false
