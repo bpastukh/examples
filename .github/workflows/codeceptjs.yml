@@ -36,3 +36,4 @@ jobs:
       env:
         TESTOMATIO: "${{ github.event.inputs.testomatio }}"
         TESTOMATIO_URL: https://beta.testomat.io
+        TESTOMATIO_RUN: "${{ github.event.inputs.run }}"
