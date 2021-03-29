@@ -31,7 +31,7 @@ jobs:
     - run: echo "${{ github.event.inputs.browsers }}"
     - run: npm i
       working-directory: codeceptJS
-    - run: npx codeceptjs run --grep "${{ github.event.inputs.grep }}"
+    - run: npx codeceptjs run-workers --grep "${{ github.event.inputs.grep }}"
       working-directory: codeceptJS
       env:
         TESTOMATIO: "${{ github.event.inputs.testomatio }}"
