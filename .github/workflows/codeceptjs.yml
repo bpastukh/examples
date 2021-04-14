@@ -35,6 +35,6 @@ jobs:
       working-directory: codeceptJS
       env:
         TESTOMATIO: "${{ github.event.inputs.testomatio }}"
-        TESTOMATIO_URL: https://beta.testomat.io
+        TESTOMATIO_URL: "${{ github.event.inputs.testomatio_url }}"
         TESTOMATIO_RUN: "${{ github.event.inputs.run }}"
         TESTOMATIO_RUNGROUP_TITLE: Arion
