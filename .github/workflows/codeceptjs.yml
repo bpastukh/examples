@@ -12,6 +12,8 @@ on:
         default: ''
       testomatio:
         required: false
+      testomatio_url:
+        required: false        
       run:
         required: false
       browsers:
